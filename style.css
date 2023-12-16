@@ -31,6 +31,8 @@ body {
 
 #entry-form {
   display: grid;
-  justify-items: start;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Two equal columns */
+  gap: 10px; /* Adjust as needed */
+  max-width: 600px; /* Adjust as needed */
+  margin: auto; /* Center the form */
 }
