@@ -1,12 +1,36 @@
 body {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 94, 28, 1) 41%,
+    rgba(56, 91, 16, 1) 98%
+  );
+}
+
+.container {
   display: flex;
   flex-direction: row;
 }
-.img {
+.left-side {
   background-image: url('./img/roadtrip-signup.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 600px;
-  width: 600px;
+  height: 900px;
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .left-side {
+    background: url('./img/roadtrip-signup.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vw;
+    width: 412px;
+  }
+}
+
+#entry-form {
+  display: grid;
+  justify-items: start;
+  justify-content: center;
 }
