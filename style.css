@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  background-image: url('./img/roadtrip-signup.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+  width: 600px;
+}
