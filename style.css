@@ -15,8 +15,10 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 900px;
+  height: 700px;
   width: 500px;
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .left-side {
@@ -29,10 +31,35 @@ body {
   }
 }
 
+.logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10vw);
+  position: fixed;
+  width: 16em;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+}
+.left-title {
+  color: darkseagreen;
+}
+
+.right-top {
+  padding: 1rem;
+}
+
 #entry-form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Two equal columns */
-  gap: 10px; /* Adjust as needed */
-  max-width: 600px; /* Adjust as needed */
-  margin: auto; /* Center the form */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+  border: 0.2rem solid darkseagreen;
+  border-radius: 10%;
+  padding: 25px;
 }
