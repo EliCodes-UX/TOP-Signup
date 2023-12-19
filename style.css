@@ -90,7 +90,6 @@ input {
 }
 button {
   font-family: 'Ubuntu', sans-serif;
-
   width: 170px;
   height: 40px;
   line-height: 1;
@@ -129,7 +128,6 @@ button span {
   z-index: 1;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.35s;
 }
 
 .success svg {
@@ -137,8 +135,6 @@ button span {
   height: 20px;
   fill: yellowgreen;
   transform-origin: 50% 50%;
-  transform: translateY(-50%) rotate(0deg) scale(0);
-  transition: all 0.35s;
 }
 
 button.is_active {
@@ -151,12 +147,15 @@ button.is_active .success {
   visibility: visible;
 }
 
-button.is_active .success svg {
-  margin-top: 50%;
-  transform: translateY(-50%) rotate(720deg) scale(1);
-}
-
 button.is_active span {
   opacity: 0;
   visibility: hidden;
+}
+
+.author {
+  transform: translateY(17vh);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  border-top: 0.7vh solid darkseagreen;
 }
